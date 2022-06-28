@@ -1,0 +1,125 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:'Josefin sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.hero{
+    height: 100vh;
+    width:100%;
+    background-image:url(20220502_111504.jpg);
+    background-size: cover;
+    background-position:center;
+
+    }
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:45px;
+    padding-left:8%;
+    padding-right:8%;
+
+}
+
+.logo{
+    color:white;
+    font-size:35px;
+    letter-spacing: 1px;
+    cursor:pointer;
+}
+
+span{
+    color:red;
+
+}
+
+nav ul li{
+    list-style-type: none;
+    display:inline-block;
+    padding:10px 25px;
+    
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color:gold;
+    font-weight:bold;
+    text-transform: capitalize;
+    
+}
+
+nav ul li a:hover{
+    color:seagreen;
+    transition: .5s;
+}
+
+.btn{
+    background-color: red;
+    color:white;
+    border-radius:30px;
+    border:2px solid transparent;
+    text-decoration: none;
+    font-weight: bold;
+    padding:10px 25px;
+    transition: transform .5s;
+
+}
+
+.btn:hover{
+    transform:scale(1.2);
+}
+
+.content{
+    position:absolute;
+    top:50%;
+    left:8%;
+    transform:translateY(-50%)
+}
+
+h1{
+    color:white;
+    margin:20px 0px 20px;
+    font-size:35px;
+}
+
+h3{
+    color:white;
+    font-size:25px;
+    margin-bottom:50px;
+}
+
+h4{
+    color:#fcfc;
+    font-size:20px;
+
+}
+
+.newslatter form{
+    width:380px;
+    max-width:100%;
+    position:relative;
+}
+
+.newslatter form input:first-child{
+    display:inline-block;
+    width:30%;
+    padding:14px 130px 14px;
+    border:2px solid red;
+    border-radius:30px;
+}
+
+.newslatter form input:last-child{
+    position:absolute;
+    display: inline-block;
+    outline:none;
+    border:none;
+    padding:10px 30px;
+    border-radius:30px;
+    background:red;
+    color:white;
+    top:6px;
+    right:6px;
+}
