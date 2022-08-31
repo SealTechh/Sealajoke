@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>quiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <style type="text/css">
+   
+  #accordion{width: 100%;
+    margin-bottom: 9px;}
+  .header{background: #2233a9;
+    color: white;
+    padding:16px;
+    height: 10%}
+
+    .fa{color: blue}
+    .card-header{background: #999999;
+      color: white}
+    .card-header:hover{background:  #3355aa;
+      color: white
+      }
+    a.btn{color: white}
+    .body{padding-top:8%;
+      margin-top: 15px}
+    footer{padding: 12px;
+      background: #5566aa;;
+      color: white
+    }
+    .logo{margin-left: 5px;
+      color: white;
+      font-size: 22px;}
+      h3{font-family: sans-serif;}
+      .info{margin-top: 10px;}
+     
+      @media only screen and (max-width: 750px) {
+    .pagination {
+        display: none;
+    }
+    .body{padding-top: 14%;}
+    #quest{height: 90%}
+    .question{padding: 22px;
+      
+        }
+      #seconds,#minute{width: 35px;margin: 0px;
+      border: solid 1px white;}
+      }
+      .optionBorder{border: solid #ddd 2px;
+        background: #eee;
+        padding: 11px;
+        margin-bottom: 11px}
+        .question{background: #eee;
+          margin-bottom: 10px;}
+        .pagination{margin-top: 12px}
+        .btn-sm{margin-left: 9px;
+          margin-bottom: 14px;
+          border-radius: 6px;}
+        .form-check{border-radius: 22px;
+    }
+    #seconds,#minute{width: 50px;margin: 0px;
+      border: solid 1px white;}
+      .progress{border-radius: 22px;
+        margin-bottom: 11px;}
+        .subject{display: none;}
+        
+  #myModal{padding: 26px;
+    background: #331188; 
+    background:-webkit-linear-gradient(60deg, #222399,white,#223399);
+    height: 80%;
+    
+}
+.modal-content{background: #333399;
+text-align: center;
+color: white}
+.modal-title{margin-left: 25px;}
+#Again a{color: white}
+#Again{margin-right: 20px}
+ </style>
+</head>
+<body>
+
+<div class="header  fixed-top" >
+  <h3>Jamb CBT Practice</h3>
+</div>
+
+
+<div class="container mt-3 body home">
+  <h2 class="text-center">Jamb CBT Practice 2023</h2>
+  <p class="text-center">
+
+<b>Welcome to wizard Free Online Jamb CBT Practice platform…</b>
+</p><p class="text-center">
+Hey guys, Maxwizard is wishing all the best in your Exams!</p>
+
+  
+  <div id="accordion" class="container">
+    <h2>Select cbt subject below to begin!</h2>
+    <div class="card">
+      <div class="card-header">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+        English<i class="fa fa-glyphicon"></i>
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+        <div class="card-body">
+<p>
+           English – Jamb CBT<br>
+           Time limit: 30min<br>
+           Quiz of 40 questions from different topics in different years </p>
+           <button class="btn btn-primary" onclick="swapSubject('bio ss1')"> start</button>
+             <p class="social "> 
+            Share:
+           <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on facebook"
+   href="https://www.facebook.com/sharer/sharer.php?u=https://maxwizardth.github.io/Jamb-cbt" target="_blank"
+   rel="noopener">
+  <i class="fa fa-2x fa-facebook-square"></i>
+</a>
+    <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on twitter"
+   href="https://twitter.com/intent/tweet?url=https://maxwizardth.github.io/Jamb-cbt"
+   rel="noopener">
+  <i class="fa fa-2x fa-twitter-square"></i>
+</a>
+        </p> 
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+        Mathamatics
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+<p>
+           Mathematics – Jamb CBT<br>
+           Time limit: 30min<br>
+           Quiz of 40 questions from different topics in different years </p>
+           <button class="btn btn-primary" onclick="swapSubject('math SS2')"> start</button>
+             <p class="social "> 
+            Share:
+           <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on facebook"
+   href="https://www.facebook.com/sharer/sharer.php?u=https://maxwizardth.github.io/Jamb-cbt" target="_blank"
+   rel="noopener">
+  <i class="fa fa-2x fa-facebook-square"></i>
+</a>
+    <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on twitter"
+   href="https://twitter.com/intent/tweet?url=https://maxwizardth.github.io/Jamb-cbt"
+   rel="noopener">
+  <i class="fa fa-2x fa-twitter-square"></i>
+</a>
+        </p> 
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+          Chemistry
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+<p>
+           Chemistry – Jamb CBT<br>
+           Time limit: 30min<br>
+           Quiz of 40 questions from different topics in different years </p>
+           <button class="btn btn-primary" onclick="swapSubject('Chemistry')"> start</button>
+             <p class="social "> 
+            Share:
+           <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on facebook"
+   href="https://www.facebook.com/sharer/sharer.php?u=https://maxwizardth.github.io/Jamb-cbt" target="_blank"
+   rel="noopener">
+  <i class="fa fa-2x fa-facebook-square"></i>
+</a>
+    <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on twitter"
+   href="https://twitter.com/intent/tweet?url=https://maxwizardth.github.io/Jamb-cbt"
+   rel="noopener">
+  <i class="fa fa-2x fa-twitter-square"></i>
+</a>
+        </p> 
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header" href="#collapseFour">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+          Biology
+        </a>
+      </div>
+      <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+<p>
+           Biology – Jamb CBT<br>
+           Time limit: 30min<br>
+           Quiz of 40 questions from different topics in different years </p>
+           <button class="btn btn-primary" onclick="swapSubject('biology')"> start</button>
+             <p class="social "> 
+            Share:
+           <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on facebook"
+   href="https://www.facebook.com/sharer/sharer.php?u=https://maxwizardth.github.io/Jamb-cbt" target="_blank"
+   rel="noopener">
+  <i class="fa fa-2x fa-facebook-square"></i>
+</a>
+    <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on twitter"
+   href="https://twitter.com/intent/tweet?url=https://maxwizardth.github.io/Jamb-cbt"
+   rel="noopener">
+  <i class="fa fa-2x fa-twitter-square"></i>
+</a>
+        </p> 
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+          Commerce
+        </a>
+      </div>
+      <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          <p>
+           Commerce – Jamb CBT<br>
+           Time limit: 30min<br>
+           Quiz of 40 questions from different topics in different years </p>
+           <button class="btn btn-primary" onclick="swapSubject('commerce')"> start</button>
+             <p class="social "> 
+            Share:
+           <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on facebook"
+   href="https://www.facebook.com/sharer/sharer.php?u=https://maxwizardth.github.io/Jamb-cbt" target="_blank"
+   rel="noopener">
+  <i class="fa fa-2x fa-facebook-square"></i>
+</a>
+    <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on twitter"
+   href="https://twitter.com/intent/tweet?url=https://maxwizardth.github.io/Jamb-cbt"
+   rel="noopener">
+  <i class="fa fa-2x fa-twitter-square"></i>
+</a>
+        </p> 
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTen">
+          Physics
+        </a>
+      </div>
+      <div id="collapseTen" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+<p>
+           Physics – Jamb CBT<br>
+           Time limit: 30min<br>
+           Quiz of 40 questions from different topics in different years </p>
+           <button class="btn btn-primary" onclick="swapSubject('physics')"> start</button>
+             <p class="social "> 
+            Share:
+           <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on facebook"
+   href="https://www.facebook.com/sharer/sharer.php?u=https://maxwizardth.github.io/Jamb-cbt" target="_blank"
+   rel="noopener">
+  <i class="fa fa-2x fa-facebook-square"></i>
+</a>
+    <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on twitter"
+   href="https://twitter.com/intent/tweet?url=https://maxwizardth.github.io/Jamb-cbt"
+   rel="noopener">
+  <i class="fa fa-2x fa-twitter-square"></i>
+</a>
+        </p> 
+           
+        </div>
+      </div>
+    </div>
+   
+
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix">
+          Economics
+        </a>
+      </div>
+      <div id="collapseSix" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+<p>
+           Economics – Jamb CBT<br>
+           Time limit: 30min<br>
+           Quiz of 40 questions from different topics in different years </p>
+           <button class="btn btn-primary" onclick="swapSubject('economics')"> start</button>
+             <p class="social "> 
+            Share:
+           <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on facebook"
+   href="https://www.facebook.com/sharer/sharer.php?u=https://maxwizardth.github.io/Jamb-cbt" target="_blank"
+   rel="noopener">
+  <i class="fa fa-2x fa-facebook-square"></i>
+</a>
+    <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on twitter"
+   href="https://twitter.com/intent/tweet?url=https://maxwizardth.github.io/Jamb-cbt"
+   rel="noopener">
+  <i class="fa fa-2x fa-twitter-square"></i>
+</a>
+        </p> 
+           
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeven">
+          History
+        </a>
+      </div>
+      <div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+<p>
+           History – Jamb CBT<br>
+           Time limit: 30min<br>
+           Quiz of 40 questions from different topics in different years </p>
+           <button class="btn btn-primary" onclick="swapSubject('history')"> start</button>
+             <p class="social "> 
+            Share:
+           <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on facebook"
+   href="https://www.facebook.com/sharer/sharer.php?u=https://maxwizardth.github.io/Jamb-cbt" target="_blank"
+   rel="noopener">
+  <i class="fa fa-2x fa-facebook-square"></i>
+</a>
+    <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on twitter"
+   href="https://twitter.com/intent/tweet?url=https://maxwizardth.github.io/Jamb-cbt"
+   rel="noopener">
+  <i class="fa fa-2x fa-twitter-square"></i>
+</a>
+        </p> 
+           
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEight">
+          Geography
+        </a>
+      </div>
+      <div id="collapseEight" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+<p>
+           Geography – Jamb CBT<br>
+           Time limit: 30min<br>
+           Quiz of 40 questions from different topics in different years </p>
+           <button class="btn btn-primary"> start</button>
+             <p class="social "> 
+            Share:
+           <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on facebook"
+   href="https://www.facebook.com/sharer/sharer.php?u=https://maxwizardth.github.io/Jamb-cbt" target="_blank"
+   rel="noopener">
+  <i class="fa fa-2x fa-facebook-square"></i>
+</a>
+    <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on twitter"
+   href="https://twitter.com/intent/tweet?url=https://maxwizardth.github.io/Jamb-cbt"
+   rel="noopener">
+  <i class="fa fa-2x fa-twitter-square"></i>
+</a>
+        </p> 
+           
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseNine">
+          Government
+        </a>
+      </div>
+      <div id="collapseNine" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+<p>
+           Government – Jamb CBT<br>
+           Time limit: 30min<br>
+           Quiz of 40 questions from different topics in different years </p>
+           <button class="btn btn-primary" onclick="swapSubject('government')"> start</button>
+             <p class="social "> 
+            Share:
+           <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on facebook"
+   href="https://www.facebook.com/sharer/sharer.php?u=https://maxwizardth.github.io/Jamb-cbt" target="_blank"
+   rel="noopener">
+  <i class="fa fa-2x fa-facebook-square"></i>
+</a>
+    <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on twitter"
+   href="https://twitter.com/intent/tweet?url=https://maxwizardth.github.io/Jamb-cbt"
+   rel="noopener">
+  <i class="fa fa-2x fa-twitter-square"></i>
+</a>
+        </p>
+         
+      </div>
+    </div>
+  </div>
+  <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEleven">
+          Accounting
+        </a>
+      </div>
+      <div id="collapseEleven" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+<p>
+           Accounting – Jamb CBT<br>
+           Time limit: 30min<br>
+           Quiz of 40 questions from different topics in different years </p>
+           <button class="btn btn-primary" onclick="swapSubject('accounting')"> start</button>
+             <p class="social "> 
+            Share:
+           <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on facebook"
+   href="https://www.facebook.com/sharer/sharer.php?u=https://" target="_blank"
+   rel="noopener">
+  <i class="fa fa-2x fa-facebook-square"></i>
+</a>
+    <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on twitter"
+   href="https://twitter.com/intent/tweet?url=https://"
+   rel="noopener">
+  <i class="fa fa-2x fa-twitter-square"></i>
+</a>
+        </p>
+         
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwelve">
+          Insurance
+        </a>
+      </div>
+      <div id="collapseTwelve" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+<p>
+           Insurance – Jamb CBT<br>
+           Time limit: 30min<br>
+           Quiz of 40 questions from different topics in different years </p>
+           <button class="btn btn-primary" onclick="swapSubject('insurance')"> start</button>
+             <p class="social "> 
+            Share:
+           <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on facebook"
+   href="https://www.facebook.com/sharer/sharer.php?u=https://" target="_blank"
+   rel="noopener">
+  <i class="fa fa-2x fa-facebook-square"></i>
+</a>
+    <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on twitter"
+   href="https://twitter.com/intent/tweet?url=https://"
+   rel="noopener">
+  <i class="fa fa-2x fa-twitter-square"></i>
+</a>
+        </p>
+         
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThirteen">
+          Islamic Religious Knowledge
+        </a>
+      </div>
+      <div id="collapseThirteen" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+<p>
+           IRK – Jamb CBT<br>
+           Time limit: 30min<br>
+           Quiz of 40 questions from different topics in different years </p>
+           <button class="btn btn-primary" onclick="swapSubject('IRK')"> start</button>
+             <p class="social "> 
+            Share:
+           <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on facebook"
+   href="https://www.facebook.com/sharer/sharer.php?u=https://" target="_blank"
+   rel="noopener">
+  <i class="fa fa-2x fa-facebook-square"></i>
+</a>
+    <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on twitter"
+   href="https://twitter.com/intent/tweet?url=https://"
+   rel="noopener">
+  <i class="fa fa-2x fa-twitter-square"></i>
+</a>
+        </p>
+         
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFourteen">
+          Christain Religious Knowledge
+        </a>
+      </div>
+      <div id="collapseFourteen" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+<p>
+           C.R.K – Jamb CBT<br>
+           Time limit: 30min<br>
+           Quiz of 40 questions from different topics in different years </p>
+           <button class="btn btn-primary" onclick="swapSubject('CRK')"> start</button>
+             <p class="social "> 
+            Share:
+           <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on facebook"
+   href="https://www.facebook.com/sharer/sharer.php?u=https://" target="_blank"
+   rel="noopener">
+  <i class="fa fa-2x fa-facebook-square"></i>
+</a>
+    <a class="btn-floating btn btn-tw" type="button" role="button" title="Share on twitter"
+   href="https://twitter.com/intent/tweet?url=https://"
+   rel="noopener">
+  <i class="fa fa-2x fa-twitter-square"></i>
+</a>
+        </p>
+         
+      </div>
+    </div>
+  </div>
+
+</div>
+   
+    <p class="info">
+     The links above point to the jamb cbt online practice test for the top 14 subjects in jamb 2022-2023 examination. we are also working on developing offline jamb cbt practice app(laptop and Android). soon you will be able to use it.
+    </p>
+    <p>
+      <h4>What else?</h4>
+      there is also free access for you to meet different tutors who are ready to guide you incase you have any problem with your subject. you can easily meet them <a href="">here</a> infact you need them for counselling if you want to do very best in 2023 jamb test. that is simple truth.
+    </p>
+    <p>This platform is cbt simulation using real jamb past questions. so relax you are at the right for every question you come across here is jamb question</p>
+    <p>this is just a nice little something maxwizard made to help better your chances in the forthcoming UTME</p>
+    <p>And it is totally free</p>
+    <p>You are very welcome lol.</p>
+    <p><b>Is there anything I can do to appreciate?</b></p>
+    <p>Yeah! Just spread the goodness of website to some other people on <a href="">Twitter</a> and <a href="">Facebook.</a> <br>we will accept any financial aid too for we still need more donation on our coming offline software.</p>
+   </div>
+ </div>
+
+
+<div class="container mt-3 body subject">
+  
+
+  <h2 class="text-center" id="currentSubject">Mathematics-Jamb CBT</h2>
+<div class="container ">
+     <h6 class="" id="time"><strong>
+          Time left:
+          <input type="Number" class="" id="minute" value="30">:
+          <input type="number" class="" id="seconds" value="00"> 
+          </strong></h6>
+          <div class="progress">
+  <div class="progress-bar" style="width:100%"></div>
+</div>
+    <h5 id="questNo">Question 1</h5>
+    <div class="container pt-3 questions" id="questions">
+
+     <form id="quest">
+       <p class="loading">
+  <span class="spinner-border spinner-border-sm"></span>
+  Loading..
+</p>
+     </form>
+     </div>
+
+     <div class="container">
+    <button class="btn btn-secondary btn-sm" onclick="previous()">Previous</button>
+    <button class="btn btn-secondary btn-sm" onclick="nextQuest()">Next</button>
+   
+    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" id="submitbtn" data-bs-target="#myModal" onclick="show_wrong()">
+    Submit
+  </button>
+  <!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content text-center">
+
+      <!-- Modal Header -->
+      <div class="modal-header text-center">
+        <h4 class="modal-title" id="modalTitle">YOUR RESULT</h4>
+        <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h3 class="text-center">Congratulations!!</h3>
+        <p>You have completed the quiz</p>
+        <hr>
+        <h6 class="text-center">Result</h6>
+        <hr>
+        <h4 id="yourScore"></h4>
+      </div>
+     
+      <!-- Modal footer -->
+
+      <div class="modal-footer">
+        <div id="Again"><a href="" onclick="location.reload()">Take Quiz Again</a></div>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <div><p class="text-center"><a href="" onclick="location.reload()">Change Subject</a></p></div>
+
+    <ul class="pagination row" id="goto">
+
+        </ul>
+  </div>
+</div>
+   
+  
+   </div>
+ </div>
+<footer class="footer ">
+     <h2>Connect with Us<hr></h2>
+     <p class="">
+      <a href="https://web.facebook.com/abdullahi.oladejo.10"><i class="fa fa-facebook-square logo" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-whatsapp logo" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/oladejoabdulla7"><i class="fa fa-twitter logo" aria-hidden="true"></i></a>
+       <a href="https://www.instagram.com/maxwizardth/"><i class="fa fa-instagram logo" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-linkedin-square logo" aria-hidden="true"></i></a>
+       <a href="https://github.com/maxwizardth"><i class="fa fa-github logo" aria-hidden="true"></i></a>
+        <h6>Call Hours: 9am-9pm (Mon-Fri)</h6>
+        <h6><a href=""><i class="fa fa-phone logo" aria-hidden="true"></i></a>+2349153036869</h6>
+        <h6><a href=""><i class="fa fa-envelope logo" aria-hidden="true"></i>
+        </a>abdullahioladejo1@gmail.com</h6>
+      </p>
+     <div class="text-center cpy-right">
+    <span id="copy">© <small>youngscientist|Designed by Maxwizard</small></span>
+  </div>
+</footer> 
+<script type="text/javascript" src="allData.js"></script>
+<script type="text/javascript">
+	var mySubjData=allSubject['bio ss1']
+
+const card = document.querySelectorAll('.card-header');
+  for (var index=0;index<card.length;index++){
+card[index].addEventListener('click', event => {
+    event.target.firstElementChild.click()
+  })}
+
+//functionn to append the data on elements
+function appendD(data) {
+  const questDiv = document.createElement("div");
+  questDiv.setAttribute('class', `question container`);
+  const h3 = document.createElement("p");
+  h3.setAttribute('class', `question-item`);
+  h3.setAttribute('data-key', data.id);
+  h3.innerHTML = data.Question+'<br>'
+  questDiv.appendChild(h3)
+  optionsBox=document.createElement('div')
+  optionsBox.setAttribute('class', `optionBorder`);
+  var options=['a','b','c','d']
+  counter.answers[counter.questIndex-1]=data.Answer
+  for(let property of options){
+  radioOption=data.Option[property]
+  input = document.createElement("input");
+  input.setAttribute('class', `form-check-input`);
+  input.setAttribute('type', `radio`);
+  input.setAttribute('name', counter.questIndex);
+  input.setAttribute('value', radioOption);
+  input.setAttribute('data-key', property)
+
+  div=document.createElement('div')
+  div.setAttribute('class', `form-check`)
+  input.setAttribute('class', `form-check-input`)
+  label=document.createElement('label')
+  labelText=document.createTextNode(property.toUpperCase()+'. '+radioOption)
+  label.appendChild(labelText)
+  div.appendChild(input)
+  div.appendChild(label)
+  optionsBox.appendChild(div)
+  questDiv.appendChild(optionsBox)
+  document.getElementById('questions').appendChild(questDiv)
+
+}
+counter.questIndex+=1
+}
+
+//function to display active question on screen
+function active_question(activeQuestion=0){
+    var questElements=document.getElementsByClassName('question')
+    k=questElements.length-1
+  activeQuestion=activeQuestion<0?0:activeQuestion>k?k:activeQuestion
+  //this is to make sure that the user see the last quest when reaching the first and still clickiing previous
+
+          for(var i=0;i<questElements.length;i++){
+            questElements[i].style.display='none'}
+           questElements[activeQuestion].style.display='block';
+            document.getElementById('questNo').innerHTML='Question '+ eval(activeQuestion+1)
+           counter.gotoIndex=activeQuestion }
+
+
+//function for next button
+function nextQuest(argument) {
+  counter.gotoIndex++
+  active_question(counter.gotoIndex)
+}
+// function for previous button
+function previous(argument) {
+  counter.gotoIndex--
+  active_question(counter.gotoIndex)
+}
+
+
+//functions to keep the user answers
+    function user_answer() {  
+  for (var i = 0; i < all_radio.length; i++) {
+    if (all_radio[i].checked) {
+      UserQuest_no=all_radio[i].name-1;
+      user_answer=all_radio[i].dataset.key;
+      counter.userAnswers[UserQuest_no]=user_answer;
+      counter.answers[UserQuest_no]=data[UserQuest_no].answer;
+      //changing background color of pagination to green
+      li=document.getElementsByClassName('page-link');
+      li[UserQuest_no].style.backgroundColor='#333399';
+      li[UserQuest_no].style.color='white';
+    }
+  }}
+
+//function to create pagination buttons to goto respective question.
+function createPagination() {
+    var paginationLength=mySubjData.length+1
+    var ul=document.getElementById('goto')
+    ul.innerHTML=''//clear all initial elements
+    for(var i=1;i<paginationLength;i++){
+      
+    li=document.createElement('li');
+    li.setAttribute('class',"page-item col-sm-1 text-center");
+    a=document.createElement('a');
+    a.setAttribute('class',"page-link text-center");
+    a.setAttribute('href',"#");
+    start=eval(i-1);//function of each pagination
+    go='active_question('+start+')';
+    a.setAttribute('onclick',go)
+    number=document.createTextNode(i);
+    a.appendChild(number);//
+    li.appendChild(a);
+    ul.appendChild(li)}
+    }
+ 
+ 
+//function to show the wrong and correct option
+function show_wrong() {  
+   
+  for (var i = 0; i < all_radio.length; i++) {
+    num=all_radio[i].name-1;
+    option=  all_radio[i].parentNode
+     if(all_radio[i].checked&&counter.answers[num]!=all_radio[i].dataset.key)
+        {option.style.background='red';
+         option.style.color='white';}
+    if(counter.answers[num]==all_radio[i].dataset.key)
+      {   
+      option.style.backgroundColor='#223399';
+      option.style.color='white';
+      }
+    if(counter.answers[num]==all_radio[i].dataset.key&&all_radio[i].checked)
+      {   
+        option.style.backgroundColor='#223399';
+        option.style.color='white';
+        counter.correct+=1
+      }
+    }
+    document.getElementById('yourScore').innerHTML='You scored <br>'+counter.correct+'/40';
+    document.getElementById('submitbtn').style.display='none';
+    }
+
+
+var counter={questIndex:1,gotoIndex:0,
+userAnswers:new Array(),answers:new Array(),
+correct:0,subject:'english'}
+
+var all_radio =document.getElementsByClassName('form-check-input')
+
+function quiz(subject) {
+  subject=subject
+   //change the subject first character to Uppercase
+   subjHead=subject.charAt(0).toUpperCase()+subject.slice(1)
+   document.getElementById('currentSubject').innerHTML=subjHead+'-Jamb CBT'
+  data=allSubject[subject]
+  console.log(data)
+  start(data)
+
+}        
+
+
+
+//starting the quiz
+function start(data){
+document.getElementById('questions').innerHTML=''
+data.forEach((question)=>appendD(question))
+active_question()
+createPagination()  
+timeDisplay=setInterval(timer,1000)
+document.body.addEventListener('click',user_answer)
+element=document.getElementById('submitbtn')
+element.addEventListener('click',()=>{clearInterval(timeDisplay)})
+ }
+ 
+//Time keeping codes
+ function timer(){
+  //getting the minutes and seconds 
+  var minute=Number(document.getElementById('minute').value)
+  var seconds=Number(document.getElementById('seconds').value)
+  //check wether time is over
+  if(minute==0&&seconds==1){document.getElementById('submitbtn').click();
+ document.getElementById('modalTitle').innerHTML='Your Time is Up'}
+ // calculating the width bar with respect to time left
+  width=100*(minute*60+seconds)/1800
+    //convert minute to seconds
+    if(seconds==0){var minute=minute-1;
+    document.getElementById('seconds').value=59
+    if(String(minute).length==1){minute='0'+String(minute)}
+    document.getElementById('minute').value=minute}
+    else{seconds-=1
+      if(seconds<10){seconds='0'+String(seconds)}
+      document.getElementById('seconds').value=seconds}
+    progressBar=document.getElementsByClassName('progress-bar')[0];
+    progressBar.style.width=width+'%'
+    progressBar.style.backgroundColor=width<10?'red':'blue'
+      } 
+
+
+function swapSubject(subject){
+  counter.subject=subject
+  document.getElementsByClassName('home')[0].style.display='none'
+  document.getElementsByClassName('subject')[0].style.display='block'
+  quiz(counter.subject)
+}
+
+</script>
+</body>
+
+	<script>
+		
+</script>
+</html>
