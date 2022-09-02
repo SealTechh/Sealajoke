@@ -3333,7 +3333,7 @@ var allSubject={
 	"d":"vegetables"},
 	"Answer":""},
 	],
-	"chem ss2":[
+	"Chemistry ss2":[
 	//IBNU TAEMIYYAH COLLEGE
 //CHEMISTRY
 //SSS 2 SECOND TERM
@@ -3342,21 +3342,21 @@ var allSubject={
 	"b":"I < Br < Cl < F ",
 	"c":"I < Cl < Br < F ",
 	"d":"Br < I < Cl < F."},
-	"Answer":""},
+	"Answer":"a"},
 
 	{"Question":"Which of the following halogens is liquid at room temperature? ",
 	"Option":{"a":"Iodine ",
 	"b":"Chlorine ",
 	"c":"Bromine ",
 	"d":"Fluorine"},
-	"Answer":""},
+	"Answer":"b"},
 
 	{"Question":"The following elements are halogens except ",
 	"Option":{"a":"Astatine ",
 	"b":"Aspapite ",
 	"c":"Iodine ",
 	"d":"Bromine."},
-	"Answer":""},
+	"Answer":"c"},
 
 	{"Question":"Nitrogen combines directly with metals except ____ ",
 	"Option":{"a":"Cu ",
